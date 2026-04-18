@@ -2,7 +2,7 @@
 
 [![GitHub Issues](https://img.shields.io/github/issues/shenweichen/graphembedding.svg
 )](https://github.com/shenweichen/graphembedding/issues)
-![CI status](https://github.com/shenweichen/graphembedding/workflows/CI/badge.svg)
+[![CI status](https://github.com/shenweichen/graphembedding/actions/workflows/ci.yml/badge.svg)](https://github.com/shenweichen/graphembedding/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/shenweichen/graphembedding/branch/master/graph/badge.svg)](https://codecov.io/gh/shenweichen/graphembedding)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c46407f5931f40048e28860dccf7dabc)](https://www.codacy.com/gh/shenweichen/GraphEmbedding/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=shenweichen/GraphEmbedding&amp;utm_campaign=Badge_Grade)
 [![Disscussion](https://img.shields.io/badge/chat-wechat-brightgreen?style=flat)](./README.md#disscussiongroup--related-projects)
@@ -21,13 +21,16 @@
 | Struc2Vec | [KDD 2017][struc2vec: Learning Node Representations from Structural Identity](https://arxiv.org/pdf/1704.03165.pdf)        | [【Graph Embedding】Struc2Vec：算法原理，实现和应用](https://zhuanlan.zhihu.com/p/56733145) |
 
 
+
+
 # How to run examples
-1. clone the repo and make sure you have installed `tensorflow` or `tensorflow-gpu` on your local machine. 
-2. run following commands
+
+1. Clone the repo and install dependencies.
+2. Run one example script.
+
 ```bash
-python setup.py install
-cd examples
-python deepwalk_wiki.py
+pip install -e .[tf]
+python examples/deepwalk_wiki.py
 ```
 
 ## DisscussionGroup & Related Projects
